@@ -20,6 +20,10 @@ html {
   line-height: 1.5;
 }
 
+a {
+  color: inherit;
+}
+
 .container {
   max-width: 85%;
   margin: 0 auto;
