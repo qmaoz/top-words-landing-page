@@ -124,7 +124,7 @@ section.purpose {
 }
 
 section.tasks {
-  background: var(--dark-primary-color);
+  background: var(--light-primary-color);
 }
 
 section.expected-results {
