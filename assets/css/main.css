@@ -94,6 +94,15 @@ section.keywords {
   background: var(--light-primary-color);
 }
 
+ul {
+  list-style-type: disclosure-closed;
+}
+
+ul li {
+  list-style-type: disclosure-closed;
+  margin-bottom: 0.5em;
+}
+
 section.purpose {
   background: var(--primary-color);
 }
