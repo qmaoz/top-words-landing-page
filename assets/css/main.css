@@ -82,12 +82,28 @@ header h2::before {
   background: var(--primary-text);
 }
 
+section h2 {
+  position: relative; 
+}
+
+section h2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -0.11em;
+  left: 0;
+  width: 3.33em;
+  height: 0.11em;
+  background: var(--primary-text);
+
+}
+
 section.description {
   background: var(--light-primary-color);
 }
 
 section.relevance {
-  background: var(--dark-primary-color);
+  background: var(--primary-color);
 }
 
 section.keywords {
@@ -108,15 +124,15 @@ section.purpose {
 }
 
 section.tasks {
-  background: var(--light-primary-color);
-}
-
-section.methodology {
   background: var(--dark-primary-color);
 }
 
 section.expected-results {
   background: var(--light-primary-color);
+}
+
+section.methodology {
+  background: var(--dark-primary-color);
 }
 
 section.contacts {
