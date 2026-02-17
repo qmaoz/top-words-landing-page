@@ -1,12 +1,9 @@
 :root {
-  --dark-primary-color: #FBC02D;
-  --light-primary-color: #FFF9C4;
   --primary-color: #FFEB3B;
-  --icons: #212121;
-
+  --light-primary-color: #FFF9C4;
+  --dark-primary-color: #FBC02D;
   --accent-color: #448AFF;
   --primary-text: #212121;
-  --secondary-text: #757575;
   --divider-color: #BDBDBD;
 }
 
@@ -30,19 +27,16 @@ a {
 }
 
 header {
-  background: var(--primary-color);
+  background: linear-gradient(90deg, #ffe259 0%, #ffa751 100%);
   color: var(--primary-text);
   padding: 1rem;
+  max-height: 100vh;
+  height: 100vh;
 }
 
 header, section {
   padding: 1rem;
   border-bottom: 2px solid var(--divider-color);
-}
-
-header {
-  max-height: 100vh;
-  height: 100vh;
 }
 
 .header__bottom {
@@ -60,8 +54,13 @@ header {
 }
 
 .header__row img {
-  width: auto;
-  height: 100%;
+  min-width: 200px;
+  height: 200px;
+  transition: transform 0.25s;
+}
+
+.header__row img:hover {
+  transform: rotate(-4deg) scale(1.04);
 }
 
 h1 {
@@ -87,7 +86,8 @@ header h2::before {
 }
 
 section h2 {
-  position: relative; 
+  position: relative;
+  letter-spacing: 0.02em;
 }
 
 section h2::after {
@@ -99,52 +99,21 @@ section h2::after {
   width: 3.33em;
   height: 0.11em;
   background: var(--primary-text);
-
 }
 
-section.description {
-  background: var(--light-primary-color);
-}
-
-section.relevance {
-  background: var(--primary-color);
-}
-
-section.keywords {
-  background: var(--light-primary-color);
-}
-
-ul {
-  list-style-type: disclosure-closed;
-}
-
-ul li {
-  list-style-type: disclosure-closed;
-  margin-bottom: 0.5em;
-}
-
-section.purpose {
-  background: var(--primary-color);
-}
-
-section.tasks {
-  background: var(--light-primary-color);
-}
-
-section.expected-results {
-  background: var(--light-primary-color);
-}
-
-section.methodology {
-  background: var(--dark-primary-color);
-}
-
+section.description,
+section.relevance,
+section.keywords,
+section.purpose,
+section.tasks,
+section.expected-results,
+section.methodology,
 section.contacts {
-  background: var(--primary-color);
+  background: linear-gradient(90deg, #fbc2eb 0%, #a6c1ee 100%);
 }
 
 footer {
-  background: var(--light-primary-color);
+  background: linear-gradient(90deg, #e0c3fc 0%, #8ec5fc 100%);
   text-align: center;
-  padding: 1rem 0;
+  padding: 1.2rem 0;
 }
