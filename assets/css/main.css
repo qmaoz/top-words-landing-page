@@ -127,6 +127,10 @@ header h2::before {
   background: var(--primary-text);
 }
 
+header .site-title {
+  margin-bottom: 1.6rem;
+}
+
 section h2 {
   position: relative;
   letter-spacing: 0.02em;
